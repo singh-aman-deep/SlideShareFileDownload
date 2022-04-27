@@ -42,7 +42,7 @@ class APIHandler private constructor(baseUrl: String) {
                 synchronized(APIHandler::class.java) {
                     if (instance == null) {
                         instance =
-                            APIHandler("https://www.slidesharedownloader.com/slideshareappii/")
+                            APIHandler(BuildConfig.BASE_URL)
                     }
                 }
             }
